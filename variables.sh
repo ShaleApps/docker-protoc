@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
 DOCKER_REPO=${DOCKER_REPO}
-NAMESPACE=${NAMESPACE:-namely}
+NAMESPACE=${NAMESPACE:-shaleapps}
 GRPC_VERSION=${GRPC_VERSION:-1.22}
 GRPC_JAVA_VERSION=${GRPC_JAVA_VERSION:-1.22}
 BUILD_VERSION=${BUILD_VERSION:-1}
 CONTAINER=${DOCKER_REPO}${NAMESPACE}
 LATEST=${1:false}
-BUILDS=("protoc-all" "protoc" "prototool" "grpc-cli" "gen-grpc-gateway")
+BUILDS=("protoc-all" "protoc" "prototool")
